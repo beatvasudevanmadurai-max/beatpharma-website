@@ -1,90 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us - BeatPharma Laboratory Private Limited</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Contact | BeatPharma</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="images/logo.png" alt="BeatPharma Logo" height="40" class="me-2">
-      <span class="fw-bold text-primary">BeatPharma Laboratory Pvt. Ltd.</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="quality.html">Quality</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Contact Section -->
 <section class="container my-5">
-    <h2 class="text-primary fw-bold mb-4">Contact Us</h2>
+<h2 class="text-primary">Contact Us</h2>
 
-    <div class="row">
-        <!-- Contact Info -->
-        <div class="col-md-5 mb-4">
-            <h5 class="fw-bold">BeatPharma Laboratory Private Limited</h5>
-            <p>
-                📍 Address: (Add your office / plant address)<br>
-                📞 Phone: (Add phone number)<br>
-                📧 Email: info@beatpharma.com
-            </p>
-            <p>
-                For product inquiries, partnerships, or general questions,
-                please use the contact form.
-            </p>
-        </div>
+<form name="contact" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="contact">
 
-        <!-- Contact Form -->
-        <div class="col-md-7">
-            <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
+<input class="form-control mb-2" name="name" placeholder="Your Name" required>
+<input class="form-control mb-2" name="email" placeholder="Email" required>
+<textarea class="form-control mb-2" name="message" placeholder="Message"></textarea>
 
-                <div class="mb-3">
-                    <label class="form-label">Full Name</label>
-                    <input type="text" name="name" class="form-control" required>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Email Address</label>
-                    <input type="email" name="email" class="form-control" required>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Message</label>
-                    <textarea name="message" rows="4" class="form-control" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                    Send Message
-                </button>
-            </form>
-        </div>
-    </div>
+<button class="btn btn-primary">Submit</button>
+</form>
 </section>
-
-<!-- Footer -->
-<footer class="bg-primary text-white text-center py-3">
-  <p class="mb-0">
-    © 2026 BeatPharma Laboratory Private Limited. All rights reserved.
-  </p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
